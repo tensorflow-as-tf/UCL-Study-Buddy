@@ -1,0 +1,418 @@
+/* styles */
+/* called by your view template */
+
+/* You might want to try something fancier: */
+/* less: http://lesscss.org/ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  margin: 25px;
+  background-color: white; /* #E8E6E4*/
+}
+
+h1 {
+  font-weight: bold;
+  color: #552782;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  font-family: "Helvetica Neue", sans-serif;
+  max-width: 600px;
+}
+
+form {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: cyan;
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 3px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #552782;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}
+
+footer > a {
+  color: #BBBBBB;
+}
+
+.nicejob {
+  text-decoration: line-through;
+}
+
+/*[ Maps ]*/
+
+.map {
+  position: relative;
+  top: 150px;
+  left: 350px;
+  border-radius: 10px;
+}
+#container {
+  position: absolute;
+  clip: rect(0, 2000px, 2000px, 300px);
+  /* clip: shape(top, right, bottom, left); NB 'rect' is the only available option */
+}
+
+/*[ Library pictures ]*/
+
+.container0 {
+  position: absolute;
+  width: 50%;
+  top: 200px;
+  left: 50px;
+  
+  
+}
+
+.container1 {
+  position: absolute;
+  width: 50%;
+  top: 200px;
+  left: 450px;
+}
+
+.container2 {
+  position: absolute;
+  width: 55%;
+  top: 200px;
+  left: 850px;
+}
+
+.container3 {
+  position: absolute;
+  width: 50%;
+  top: 450px;
+  left: 50px;
+}
+
+.container4 {
+  position: absolute;
+  width: 50%;
+  top: 500px;
+  left: 450px;
+}
+
+.container5 {
+  position: absolute;
+  width: 55%;
+  top: 500px;
+  left: 850px;
+}
+
+.image {
+  position: relative;
+  display: block;
+  width: 50%;
+  height: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #BEE2F0;
+}
+
+.container0:hover .overlay {
+  opacity: 0.85;
+}
+
+.container1:hover .overlay {
+  opacity: 0.85;
+}
+
+.container2:hover .overlay {
+  opacity: 0.85;
+}
+
+.container3:hover .overlay {
+  opacity: 0.85;
+}
+
+.container4:hover .overlay {
+  opacity: 0.85;
+}
+
+.container5:hover .overlay {
+  opacity: 0.85;
+}
+
+.text {
+  opacity: 1;
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #552782;
+  background-opacity: 1;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/*[ Table ]*/
+
+.limiter {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.container-table100 {
+  width: 40%;
+  height: 40%;
+  background: #c850c0;
+  background: -webkit-linear-gradient(45deg, #4158d0, #c850c0);
+  background: -o-linear-gradient(45deg, #4158d0, #c850c0);
+  background: -moz-linear-gradient(45deg, #4158d0, #c850c0);
+  background: linear-gradient(45deg, #4158d0, #c850c0);
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 33px 30px;
+
+  border-radius: 10px;
+}
+
+.wrap-table100 {
+  width: 1170px;
+}
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+table * {
+  position: relative;
+}
+table td,
+table th {
+  padding-left: 8px;
+}
+table thead tr {
+  height: 60px;
+  background: #36304a;
+}
+table tbody tr {
+  height: 50px;
+}
+table tbody tr:last-child {
+  border: 0;
+}
+table td,
+table th {
+  text-align: left;
+}
+table td.l,
+table th.l {
+  text-align: right;
+}
+table td.c,
+table th.c {
+  text-align: center;
+}
+table td.r,
+table th.r {
+  text-align: center;
+}
+
+.table100-head th {
+  font-family: OpenSans-Regular;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tbody tr {
+  font-family: OpenSans-Regular;
+  font-size: 15px;
+  color: #808080;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:hover {
+  color: #555555;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.column1 {
+  width: 260px;
+  padding-left: 40px;
+}
+
+.column2 {
+  width: 160px;
+}
+
+.column3 {
+  width: 245px;
+}
+
+.column4 {
+  width: 110px;
+  text-align: right;
+}
+
+.column5 {
+  width: 170px;
+  text-align: right;
+}
+
+.column6 {
+  width: 222px;
+  text-align: right;
+  padding-right: 62px;
+}
+
+@media screen and (max-width: 992px) {
+  table {
+    display: block;
+  }
+  table > *,
+  table tr,
+  table td,
+  table th {
+    display: block;
+  }
+  table thead {
+    display: none;
+  }
+  table tbody tr {
+    height: auto;
+    padding: 37px 0;
+  }
+  table tbody tr td {
+    padding-left: 40% !important;
+    margin-bottom: 24px;
+  }
+  table tbody tr td:last-child {
+    margin-bottom: 0;
+  }
+  table tbody tr td:before {
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    color: #999999;
+    line-height: 1.2;
+    font-weight: unset;
+    position: absolute;
+    width: 40%;
+    left: 30px;
+    top: 0;
+  }
+  table tbody tr td:nth-child(1):before {
+    content: "Date";
+  }
+  table tbody tr td:nth-child(2):before {
+    content: "Order ID";
+  }
+  table tbody tr td:nth-child(3):before {
+    content: "Name";
+  }
+  table tbody tr td:nth-child(4):before {
+    content: "Price";
+  }
+  table tbody tr td:nth-child(5):before {
+    content: "Quantity";
+  }
+  table tbody tr td:nth-child(6):before {
+    content: "Total";
+  }
+
+  .column4,
+  .column5,
+  .column6 {
+    text-align: left;
+  }
+
+  .column4,
+  .column5,
+  .column6,
+  .column1,
+  .column2,
+  .column3 {
+    width: 100%;
+  }
+
+  tbody tr {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-table100 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

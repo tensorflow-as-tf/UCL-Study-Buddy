@@ -1,0 +1,122 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>class="bold"Welcome</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        UCL Study Buddy
+      </h1>
+    </header>
+
+    <main>
+      <p class="bold">Select the library and the floor!</p>
+      <div id="buttons">
+        
+      </div>
+    
+    
+    <script>
+        var clicked = false;
+      
+        function myfunction1(){
+          if(!clicked){
+          $("#buttons").append("<button onclick=\"myfunction0()\">floor1</button>")
+           $("#buttons").append("<button onclick=\"myfunction0()\">floor2</button>")
+           $("#buttons").append("<button onclick=\"myfunction0()\">floor3</button>")
+           $("#buttons").append("<button onclick=\"myfunction0()\">floor4</button>")
+            clicked = true;
+          }
+          
+        }
+      
+      
+      
+  function myfunction0(){
+    
+      const queryString = window.location.search;
+      console.log(queryString);
+      const urlParams = new URLSearchParams(queryString);
+      const id = urlParams.get('id')
+      console.log(id);
+      // shirt
+
+      const key = urlParams.get('key')
+      console.log(key);
+      // blue
+    
+      window.location.href = "https://garrulous-parenthesis.glitch.me/oauth/complete?id="+id+"&key="+key;
+}
+   </script>
+    
+    
+
+    <div class="container0">
+  <img src="https://cdn.glitch.com/1e480d76-b2f8-4a56-b541-a5825fd0fe9e%2Fsc.jpg?v=1579362412447" alt="Avatar" class="image">
+  <div class="overlay" >
+    <button type= "button" onclick="myfunction1()" class="text">Student Centre</button>
+  </div>
+</div>
+
+    <div class="container1">
+  <img src="https://cdn.glitch.com/1e480d76-b2f8-4a56-b541-a5825fd0fe9e%2Fmain.jpg?v=1579362413375" alt="Avatar" class="image" onclick="myfunction0()">
+  <div class="overlay">
+    <button type= "button" onclick="myfunction1()" class="text">Main Library</button>
+  </div>
+</div>
+
+
+    <div class="container2">
+  <img src="https://cdn.glitch.com/1e480d76-b2f8-4a56-b541-a5825fd0fe9e%2Fcruci.jpg?v=1579362418058" alt="Avatar" class="image" onclick="myfunction0()">
+  <div class="overlay">
+    <button type= "button" onclick="myfunction1()" class="text">Cruciform</button>
+  </div>
+</div>
+    
+        <div class="container3">
+  <img src="https://cdn.glitch.com/1e480d76-b2f8-4a56-b541-a5825fd0fe9e%2Fscience.jpg?v=1579421859130" alt="Avatar" class="image" onclick="myfunction0()">
+  <div class="overlay">
+    <button type= "button" onclick="myfunction1()" class="text">Science Library</button>
+  </div>
+</div>
+    
+        <div class="container4">
+  <img src="https://cdn.glitch.com/1e480d76-b2f8-4a56-b541-a5825fd0fe9e%2Fioe.jpg?v=1579369866370" alt="Avatar" class="image" onclick="myfunction0()">
+  <div class="overlay">
+    <button type= "button" onclick="myfunction1()" class="text">IoE</button>
+  </div>
+</div>
+    
+        <div class="container5">
+  <img src="https://cdn.glitch.com/1e480d76-b2f8-4a56-b541-a5825fd0fe9e%2Fsenate.jpg?v=1579422008236" alt="Avatar" class="image" onclick="myfunction0()">
+  <div class="overlay">
+    <button type= "button" onclick="myfunction1()" class="text">Senate House</button>
+  </div>
+</div>
+  
+  
+    </main>
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+  </body>
+    <script src="/complete.js"></script>
+</html>
+

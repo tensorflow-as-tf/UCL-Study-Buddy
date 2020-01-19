@@ -1,0 +1,58 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        UCL Study Buddy
+      </h1>
+    </header>
+
+    
+    <main>
+      <p class="bold">Welcome!</p>
+     <!-- <p>
+        Thanks to the wonders of OAuth, we know that you are called <span id="full_name"></span> and that your department is <span id="department"></span>.
+      </p> -->
+       <p>
+        These are the students who want to study as well:  
+       
+         
+    <div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100">
+          <table align = "center"
+            id="table" border="1"></table>   
+			  </div>
+			</div>
+		</div>
+  <p id="current"></p>
+</p>
+    <div id="container" class="map"></div>
+    
+  
+    </main>
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/complete.js"></script>
+  </body>
+</html>
